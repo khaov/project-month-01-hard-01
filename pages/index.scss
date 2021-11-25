@@ -1,0 +1,32 @@
+/* Vendor */
+
+@import '../vendor/normalize';
+@import '../vendor/fonts';
+
+/* Variables */
+
+@import '../blocks/variables.scss';
+
+/* Page */
+
+@import '../blocks/page/page.scss';
+
+/* Container */
+
+@import '../blocks/container/container.scss';
+
+/* Header */
+
+@import '../blocks/header/header.scss';
+
+/* Content */
+
+@import '../blocks/content/content.scss';
+
+/* Footer */
+
+@import '../blocks/footer/footer.scss';
+
+/* Section */
+
+@import '../blocks/section/section.scss';
