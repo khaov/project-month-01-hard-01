@@ -1,0 +1,14 @@
+.sandwich {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 22px;
+  height: 19px;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    opacity: .75;
+  }
+}

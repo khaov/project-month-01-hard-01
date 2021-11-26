@@ -1,0 +1,11 @@
+.header__navigation-link {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 500;
+  color: $primary-color;
+  text-decoration: none;
+  transition: .3s;
+  &:hover {
+    opacity: .75;
+  }
+}
