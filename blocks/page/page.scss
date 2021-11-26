@@ -7,8 +7,8 @@
     "content"
     "footer";
   min-height: 100vh;
-  background-color: white;
-  font-family: 'Inter', 'Arial', sans-serif;
+  background-color: $primary-background;
+  font-family: $primary-font-family;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
