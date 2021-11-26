@@ -340,28 +340,28 @@ template {
 }
 
 @font-face {
-  src: url("fonts/inter-regular.woff2") format("woff2"), url("fonts/inter-regular.woff") format("woff");
+  src: url("../vendor/fonts/inter-regular.woff2") format("woff2"), url("../vendor/fonts/inter-regular.woff") format("woff");
   font-family: "Inter";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("fonts/inter-medium.woff2") format("woff2"), url("fonts/inter-medium.woff") format("woff");
+  src: url("../vendor/fonts/inter-medium.woff2") format("woff2"), url("../vendor/fonts/inter-medium.woff") format("woff");
   font-family: "Inter";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("fonts/inter-semibold.woff2") format("woff2"), url("fonts/inter-semibold.woff") format("woff");
+  src: url("../vendor/fonts/inter-semibold.woff2") format("woff2"), url("../vendor/fonts/inter-semibold.woff") format("woff");
   font-family: "Inter";
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  src: url("fonts/inter-bold.woff2") format("woff2"), url("fonts/inter-bold.woff") format("woff");
+  src: url("../vendor/fonts/inter-bold.woff2") format("woff2"), url("../vendor/fonts/inter-bold.woff") format("woff");
   font-family: "Inter";
   font-weight: 700;
   font-style: normal;
@@ -377,6 +377,7 @@ template {
   min-height: 100vh;
   background-color: #F4F4F4;
   font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
@@ -467,4 +468,24 @@ template {
 /* Section */
 .section {
   height: 500px;
+}
+
+.section__title {
+  max-width: 460px;
+  margin: 0 0 50px;
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
+.section__description {
+  max-width: 460px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #222222;
+  opacity: 0.7;
 }/*# sourceMappingURL=index.css.map */
