@@ -53,9 +53,23 @@
         <!-- Intro -->
 
         <section class="intro section">
-          <div class="container">
+          <div class="intro__container container">
+
             <h1 class="section__title">Шоссе, ТТ и Грэвел</h1>
+
+            <div class="intro__promo">
+                <img class="intro__promo-image" src="./images/bicycles/bicycle-cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod">
+            </div>
+
             <p class="section__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+
+            <a class="button" href="/">
+              <span class="button__content">
+                Подробнее
+              </span>
+            </a>
+
+            <p class="intro__promo-caption">Cannondale Systemsix</p>
 
           </div>
         </section>
@@ -64,16 +78,18 @@
 
         <section class="quote section">
           <div class="container">
-            <figure>
-              <img src="" alt="">
-              <blockquote>
-                «Катайся много или мало, долго или коротко, как хочешь - но катайся»
-              </blockquote>
-              <figcaption>
-                <p>Эдди Меркс</p>
-                <p>Велогонщик</p>
-              </figcaption>
-            </figure>
+
+            <img class="quote__image" src="" alt="">
+
+            <blockquote class="quote__text">
+              «Катайся много или мало, долго или коротко, как хочешь - но катайся»
+            </blockquote>
+
+            <div>
+              <p class="quote__author-name">Эдди Меркс</p>
+              <p class="quote__author-subline">Велогонщик</p>
+            </div>
+
           </div>
         </section>
 
@@ -92,11 +108,9 @@
           <div class="container">
             <h2 class="section__title">Велосипеды</h2>
             <p class="section__description"></p>
-
             <ul class="bicycles__list">
 
             </ul>
-
           </div>
         </section>
 
@@ -105,8 +119,16 @@
         <section id="section-training" class="training section">
           <div class="container">
             <h2 class="section__title">Тренировки</h2>
+            <img class="training__image" src="" alt="">
             <p class="section__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
-
+            <ul>
+              <li>
+                <a href=""></a>
+              </li>
+              <li>
+                <a href=""></a>
+              </li>
+            </ul>
           </div>
         </section>
 
@@ -116,7 +138,11 @@
 
       <footer class="footer">
         <div class="container">
-            Футер
+
+            <!-- Copyright -->
+
+            <p class="footer__copyright">&copy; Вывести год на JS!!! </p>
+
           </div>
       </footer>
 
@@ -128,11 +154,12 @@
 
       <template class="bicycle-template">
         <li class="bicycles__item">
-          <a class="bicycle__link" href=""></a>
-          <figure class="bicycle">
-            <img class="bicycle__image" src="" alt="">
-            <figcaption class="bicycle__model"></figcaption>
-          </figure>
+          <div class="bicycle">
+            <a class="bicycle__link" href="" title="" target="_blank">
+              <img class="bicycle__image" src="" alt="">
+              <h3 class="bicycle__model"></h3>
+            </a>
+          </div>
         </li>
       </template>
 

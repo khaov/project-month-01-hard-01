@@ -34,6 +34,23 @@
 
 @import '../blocks/content/content.scss';
 
+/* Intro */
+
+@import '../blocks/intro/intro.scss';
+
+/* Bicycles */
+
+@import '../blocks/bicycles/bicycles.scss';
+@import '../blocks/bicycles/__list/bicycles__list.scss';
+@import '../blocks/bicycles/__item/bicycles__item.scss';
+
+/* Bicycle */
+
+@import '../blocks/bicycle/bicycle.scss';
+@import '../blocks/bicycle/__link/bicycle__link.scss';
+@import '../blocks/bicycle/__image/bicycle__image.scss';
+@import '../blocks/bicycle/__model/bicycle__model.scss';
+
 /* Footer */
 
 @import '../blocks/footer/footer.scss';

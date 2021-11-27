@@ -1,40 +1,41 @@
 const bicyclesList = document.querySelector('.bicycles__list');
 const bicycleTemplate = document.querySelector('.bicycle-template').content;
 
-// Create
+// Create Bicycles Item
 
-function createBicycleItem(imageValue, modelValue, linkValue) {
+function createBicyclesItem(imageValue, modelValue, linkValue) {
   const bicyclesItem = bicycleTemplate.querySelector('.bicycles__item').cloneNode(true);
+  const bicycleLink = bicyclesItem.querySelector('.bicycle__link');
   const bicycleImage = bicyclesItem.querySelector('.bicycle__image');
   const bicycleModel = bicyclesItem.querySelector('.bicycle__model');
-  const bicycleLink = bicyclesItem.querySelector('.bicycle__link');
 
-  bicycleImage.textContent = imageValue;
+  bicycleLink.href = linkValue;
+  bicycleLink.title = modelValue;
+  bicycleImage.src = imageValue;
+  bicycleImage.alt = modelValue;
   bicycleModel.textContent = modelValue;
-  bicycleLink.textContent = linkValue;
 
   return bicyclesItem;
 }
 
-// Render
+// Render Bicycles Item
 
-function renderBicyclesItem(bicycleImage, bicycleModel, bicycleLink) {
-  bicyclesList.append(createBicycleItem(bicycleImage, bicycleModel, bicycleLink));
+function renderBicyclesItem(bicycleLink, bicycleImage, bicycleModel) {
+  bicyclesList.append(createBicyclesItem(bicycleImage, bicycleModel, bicycleLink));
 }
 
-// Load
+// Load Bicycles Items
 
 function loadBicyclesItems(bicyclesData) {
-  const activeBicycles = bicyclesData.filter(function (item) {
-    if (item.active === 'true') {
-      return item.data;
+  const activeBicycles = bicyclesData.filter(function (category) {
+    if (category.active === 'true') {
+      return category.data;
     }
   });
 
-  activeBicycles[0]['data'].forEach(function (item) {
-    renderBicyclesItem(item.image, item.model, item.link);
+  activeBicycles[0]['data'].forEach(function (bicycle) {
+    renderBicyclesItem(bicycle.link, bicycle.image, bicycle.model);
   })
-
 }
 
 loadBicyclesItems(bicyclesItems);
