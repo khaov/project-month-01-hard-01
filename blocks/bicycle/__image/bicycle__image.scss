@@ -1,0 +1,9 @@
+.bicycle__image {
+  display: block;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $primary-background;
+  box-shadow: 0px 20px 140px rgba(0, 0, 0, .06);
+  object-fit: cover;
+  object-position: center;
+}

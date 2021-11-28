@@ -1,0 +1,14 @@
+.intro__container {
+  display: grid;
+  grid-template-columns: 460px 1fr;
+  grid-template-rows: auto auto auto 1fr;
+  gap: 50px;
+  max-width: 1440px;
+  min-height: 855px;
+  padding: 80px 120px;
+  background-image: url(../images/section-intro-image.jpg);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 610px;
+  box-sizing: border-box;
+}

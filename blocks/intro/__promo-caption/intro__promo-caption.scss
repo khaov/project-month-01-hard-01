@@ -1,0 +1,17 @@
+.intro__promo-caption {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $primary-color;
+  &::after {
+    content: '';
+    display: block;
+    width: 132px;
+    height: 2px;
+    margin: 0 0 0 30px;
+    background-color: #d7d4d4;
+  }
+}
