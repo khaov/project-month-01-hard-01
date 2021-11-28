@@ -31,3 +31,15 @@ function renderSurfacesItem(surfaceTitle, surfaceDescription, surfaceImage, surf
 surfacesItems.forEach(function (surface) {
   renderSurfacesItem(surface.title, surface.description, surface.image, surface.icon);
 })
+
+// Initialize surfaces slider
+
+const surfacesSlider = new Swiper(".surfaces__container", {
+  slidesPerView: 2,
+  spaceBetween: 40,
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

@@ -39,3 +39,23 @@ function loadBicyclesItems(bicyclesData) {
 }
 
 loadBicyclesItems(bicyclesItems);
+
+const bicyclesSlider = new Swiper(".bicycles__container", {
+  breakpoints: {
+    320: {
+      enabled: true,
+      slidesPerView: 1,
+    },
+    568: {
+      enabled: true,
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    768: {
+      enabled: false,
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  }
+
+});

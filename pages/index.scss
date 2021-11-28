@@ -42,6 +42,24 @@
 @import '../blocks/intro/__promo-image/intro__promo-image.scss';
 @import '../blocks/intro/__promo-caption/intro__promo-caption.scss';
 
+/* Surfaces */
+
+@import '../blocks/surfaces/surfaces.scss';
+@import '../blocks/surfaces/__container/surfaces__container.scss';
+@import '../blocks/surfaces/__list/surfaces__list.scss';
+@import '../blocks/surfaces/__item/surfaces__item.scss';
+@import '../blocks/surfaces/__navigation/surfaces__navigation.scss';
+@import '../blocks/surfaces/__button/surfaces__button.scss';
+
+/* Surface */
+
+@import '../blocks/surface/surface.scss';
+@import '../blocks/surface/__title/surface__title.scss';
+@import '../blocks/surface/__description/surface__description.scss';
+@import '../blocks/surface/__illustration/surface__illustration.scss';
+@import '../blocks/surface/__image/surface__image.scss';
+@import '../blocks/surface/__icon/surface__icon.scss';
+
 /* Bicycles */
 
 @import '../blocks/bicycles/bicycles.scss';
