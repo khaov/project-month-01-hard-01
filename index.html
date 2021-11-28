@@ -17,7 +17,7 @@
       <!-- Header -->
 
       <header class="header">
-        <div class="header__container container">
+        <div class="container header__container">
 
           <!-- Menu -->
 
@@ -52,59 +52,50 @@
 
         <!-- Intro -->
 
-        <section class="intro section">
-          <div class="intro__container container">
-
+        <section class="section intro">
+          <div class="container intro__container">
             <h1 class="section__title">Шоссе, ТТ и Грэвел</h1>
-
             <div class="intro__promo">
                 <img class="intro__promo-image" src="./images/bicycles/bicycle-cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod">
             </div>
-
             <p class="section__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-
             <a class="button" href="/">
               <span class="button__content">
                 Подробнее
               </span>
             </a>
-
             <p class="intro__promo-caption">Cannondale Systemsix</p>
-
           </div>
         </section>
 
         <!-- Quote -->
 
-        <section class="quote section">
+        <section class="section quote">
           <div class="container">
-
             <img class="quote__image" src="" alt="">
-
             <blockquote class="quote__text">
               «Катайся много или мало, долго или коротко, как хочешь - но катайся»
             </blockquote>
-
             <div>
               <p class="quote__author-name">Эдди Меркс</p>
               <p class="quote__author-subline">Велогонщик</p>
             </div>
-
           </div>
         </section>
 
         <!-- Surfaces -->
 
-        <section id="section-surfaces" class="surfaces section">
+        <section id="section-surfaces" class="section surfaces">
           <div class="container">
+            <ul class="surfaces__list">
 
-
+            </ul>
           </div>
         </section>
 
         <!-- Bicycles -->
 
-        <section id="section-bicycles" class="bicycles section">
+        <section id="section-bicycles" class="section bicycles">
           <div class="container">
             <h2 class="section__title">Велосипеды</h2>
             <p class="section__description"></p>
@@ -116,17 +107,17 @@
 
         <!-- Training -->
 
-        <section id="section-training" class="training section">
+        <section id="section-training" class="section training">
           <div class="container">
             <h2 class="section__title">Тренировки</h2>
             <img class="training__image" src="" alt="">
             <p class="section__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
-            <ul>
-              <li>
-                <a href=""></a>
+            <ul class="training__list">
+              <li class="training__item">
+                <a class="training__link" href="https://www.strava.com">Strava</a>
               </li>
-              <li>
-                <a href=""></a>
+              <li class="training__item">
+                <a class="training__link" href="https://www.komoot.com">Komoot</a>
               </li>
             </ul>
           </div>
@@ -139,18 +130,32 @@
       <footer class="footer">
         <div class="container">
 
-            <!-- Copyright -->
+          <!-- Form -->
 
-            <p class="footer__copyright">&copy; Вывести год на JS!!! </p>
+          <!-- Copyright -->
 
-          </div>
+          <p class="footer__copyright">&copy; Road Club 2021</p>
+        </div>
       </footer>
 
       <!-- Templates -->
 
-      <template class="surface-template">
+      <!-- Surface template -->
 
+      <template class="surface-template">
+        <li class="surfaces__item">
+          <div class="surface">
+            <h2 class="section__title surface__title"></h2>
+            <p class="section__description surface__description"></p>
+            <div class="surface__illustration">
+              <img class="surface__image" src="" alt="">
+              <img class="surface__icon" src="" alt="">
+            </div>
+          </div>
+        </li>
       </template>
+
+      <!-- Bicycle template -->
 
       <template class="bicycle-template">
         <li class="bicycles__item">
@@ -165,8 +170,9 @@
 
       <!-- Scripts -->
 
+      <script src="./scripts/data.js" defer></script>
+      <script src="./scripts/surfaces.js" defer></script>
       <script src="./scripts/bicycles.js" defer></script>
-      <script src="./scripts/index.js" defer></script>
 
   </body>
 </html>
