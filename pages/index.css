@@ -521,24 +521,81 @@ template {
   background-color: #d7d4d4;
 }
 
+/* Surfaces */
+.surfaces__container {
+  max-width: 1340px;
+  padding: 0 0 0 140px;
+  overflow: hidden;
+}
+
+.surfaces__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.surfaces__navigation {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.surfaces__button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0;
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+/* Surface */
+.surface__illustration {
+  position: relative;
+  width: 650px;
+  height: 400px;
+}
+
+.surface__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.surface__icon {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  display: block;
+  width: 98px;
+  height: 40px;
+}
+
 /* Bicycles */
 .bicycles__list {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
 
 /* Bicycle */
-.bicycle {
-  margin: 0;
-}
-
 .bicycle__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
 }
 
 .bicycle__image {
   display: block;
+  min-width: 100%;
   padding: 20px;
   border-radius: 20px;
   background-color: #f4f4f4;
@@ -547,9 +604,11 @@ template {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  box-sizing: border-box;
 }
 
 .bicycle__model {
+  margin: 22px 0 0 6px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
@@ -564,7 +623,7 @@ template {
 /* Section */
 .section__title {
   max-width: 460px;
-  margin: 22px 0 0;
+  margin: 0;
   font-size: 55px;
   line-height: 60px;
   font-weight: 700;

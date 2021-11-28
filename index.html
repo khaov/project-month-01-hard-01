@@ -86,9 +86,17 @@
         <!-- Surfaces -->
 
         <section id="section-surfaces" class="section surfaces">
-          <div class="container">
-            <ul class="surfaces__list">
+          <div class="container surfaces__container">
+            <ul class="surfaces__list swiper-wrapper">
 
+            </ul>
+            <ul class="surfaces__navigation">
+              <li>
+                <button class="surfaces__button swiper-button-prev" type="button"></button>
+              </li>
+              <li>
+                <button class="surfaces__button swiper-button-next" type="button"></button>
+              </li>
             </ul>
           </div>
         </section>
@@ -99,9 +107,12 @@
           <div class="container">
             <h2 class="section__title">Велосипеды</h2>
             <p class="section__description"></p>
-            <ul class="bicycles__list">
+            <div class="bicycles__container">
+              <ul class="bicycles__list swiper-wrapper">
 
-            </ul>
+              </ul>
+            </div>
+
           </div>
         </section>
 
@@ -143,7 +154,7 @@
       <!-- Surface template -->
 
       <template class="surface-template">
-        <li class="surfaces__item">
+        <li class="surfaces__item swiper-slide">
           <div class="surface">
             <h2 class="section__title surface__title"></h2>
             <p class="section__description surface__description"></p>
@@ -158,7 +169,7 @@
       <!-- Bicycle template -->
 
       <template class="bicycle-template">
-        <li class="bicycles__item">
+        <li class="bicycles__item swiper-slide">
           <div class="bicycle">
             <a class="bicycle__link" href="" title="" target="_blank">
               <img class="bicycle__image" src="" alt="">
@@ -170,6 +181,7 @@
 
       <!-- Scripts -->
 
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
       <script src="./scripts/data.js" defer></script>
       <script src="./scripts/surfaces.js" defer></script>
       <script src="./scripts/bicycles.js" defer></script>
