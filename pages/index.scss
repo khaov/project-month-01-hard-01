@@ -73,6 +73,11 @@
 /* Bicycles */
 
 @import '../blocks/bicycles/bicycles.scss';
+@import '../blocks/bicycles/__container/bicycles__container.scss';
+@import '../blocks/bicycles/__filter/bicycles__filter.scss';
+@import '../blocks/bicycles/__filter-item/bicycles__filter-item.scss';
+@import '../blocks/bicycles/__filter-button/bicycles__filter-button.scss';
+@import '../blocks/bicycles/__slider/bicycles__slider.scss';
 @import '../blocks/bicycles/__list/bicycles__list.scss';
 @import '../blocks/bicycles/__item/bicycles__item.scss';
 
@@ -82,6 +87,15 @@
 @import '../blocks/bicycle/__link/bicycle__link.scss';
 @import '../blocks/bicycle/__image/bicycle__image.scss';
 @import '../blocks/bicycle/__model/bicycle__model.scss';
+
+/* Training */
+
+@import '../blocks/training/training.scss';
+@import '../blocks/training/__container/training__container.scss';
+@import '../blocks/training/__image/training__image.scss';
+@import '../blocks/training/__list/training__list.scss';
+@import '../blocks/training/__item/training__item.scss';
+@import '../blocks/training/__link/training__link.scss';
 
 /* Footer */
 

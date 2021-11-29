@@ -1,0 +1,6 @@
+.training__container {
+  display: grid;
+  grid-template-columns: 1fr 580px;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 160px;
+}

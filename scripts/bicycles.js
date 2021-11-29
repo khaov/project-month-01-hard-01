@@ -42,7 +42,7 @@ loadBicyclesItems(bicyclesItems);
 
 // Initialize bicycles slider
 
-const bicyclesSlider = new Swiper(".bicycles__container", {
+const bicyclesSlider = new Swiper(".bicycles__slider", {
   breakpoints: {
     320: {
       enabled: true,
