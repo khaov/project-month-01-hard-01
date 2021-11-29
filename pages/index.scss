@@ -73,6 +73,11 @@
 /* Bicycles */
 
 @import '../blocks/bicycles/bicycles.scss';
+@import '../blocks/bicycles/__container/bicycles__container.scss';
+@import '../blocks/bicycles/__filter/bicycles__filter.scss';
+@import '../blocks/bicycles/__filter-item/bicycles__filter-item.scss';
+@import '../blocks/bicycles/__filter-button/bicycles__filter-button.scss';
+@import '../blocks/bicycles/__slider/bicycles__slider.scss';
 @import '../blocks/bicycles/__list/bicycles__list.scss';
 @import '../blocks/bicycles/__item/bicycles__item.scss';
 

@@ -1,0 +1,5 @@
+.bicycles__filter-item {
+  &:not(:last-of-type) {
+    margin-right: 40px;
+  }
+}
