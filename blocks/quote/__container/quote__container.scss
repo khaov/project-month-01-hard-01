@@ -1,0 +1,6 @@
+.quote__container {
+  display: grid;
+  grid-template-columns: 650px 1fr ;
+  grid-template-rows: 1fr auto;
+  column-gap: 80px;
+}

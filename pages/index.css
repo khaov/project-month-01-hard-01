@@ -521,6 +521,51 @@ template {
   background-color: #d7d4d4;
 }
 
+/* Quote */
+.quote__container {
+  display: grid;
+  grid-template-columns: 650px 1fr;
+  grid-template-rows: 1fr auto;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+}
+
+.quote__image {
+  grid-row: 1/3;
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.quote__text {
+  margin: 0;
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
+.quote__author-name {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: #151515;
+}
+
+.quote__author-subline {
+  margin: 6px 0 0;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #222222;
+}
+
 /* Surfaces */
 .surfaces__container {
   max-width: 1340px;
