@@ -42,6 +42,16 @@
 @import '../blocks/intro/__promo-image/intro__promo-image.scss';
 @import '../blocks/intro/__promo-caption/intro__promo-caption.scss';
 
+/* Quote */
+
+@import '../blocks/quote/quote.scss';
+@import '../blocks/quote/__container/quote__container.scss';
+@import '../blocks/quote/__image/quote__image.scss';
+@import '../blocks/quote/__text/quote__text.scss';
+@import '../blocks/quote/__author/quote__author.scss';
+@import '../blocks/quote/__author-name/quote__author-name.scss';
+@import '../blocks/quote/__author-subline/quote__author-subline.scss';
+
 /* Surfaces */
 
 @import '../blocks/surfaces/surfaces.scss';
