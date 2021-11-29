@@ -1,0 +1,5 @@
+.training__item {
+  &:not(:last-of-type) {
+    margin-right: 30px;
+  }
+}
