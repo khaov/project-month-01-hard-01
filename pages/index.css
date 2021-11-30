@@ -382,6 +382,95 @@ template {
   -webkit-font-smoothing: antialiased;
 }
 
+/* Section */
+.section__title {
+  max-width: 460px;
+  margin: 0;
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #151515;
+}
+
+.section__description {
+  max-width: 460px;
+  margin: 0;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #222222;
+  opacity: 0.7;
+}
+
+.section__button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 180px;
+  min-height: 50px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #24b47e;
+}
+.section__button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #319e75;
+  transition: 0.9s;
+}
+.section__button:hover::after {
+  width: 100%;
+}
+
+.section__button {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 180px;
+  min-height: 50px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: #24b47e;
+}
+.section__button::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%;
+  background-color: #319e75;
+  transition: 0.9s;
+}
+.section__button:hover::after {
+  width: 100%;
+}
+
 /* Container */
 .container {
   width: 100%;
@@ -740,25 +829,6 @@ template {
 /* Footer */
 .footer {
   grid-area: footer;
-}
-
-/* Section */
-.section__title {
-  max-width: 460px;
-  margin: 0;
-  font-size: 55px;
-  line-height: 60px;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  color: #151515;
-}
-
-.section__description {
-  max-width: 460px;
-  margin: 0;
-  font-size: 18px;
-  line-height: 28px;
-  font-weight: 400;
-  color: #222222;
-  opacity: 0.7;
+  padding: 80px 0 60px;
+  background-color: #efefef;
 }/*# sourceMappingURL=index.css.map */

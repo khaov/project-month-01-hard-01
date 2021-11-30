@@ -11,6 +11,14 @@
 
 @import '../blocks/page/page.scss';
 
+/* Section */
+
+@import '../blocks/section/section.scss';
+@import '../blocks/section/__title/section__title.scss';
+@import '../blocks/section/__description/section__description.scss';
+@import '../blocks/section/__button/section__button.scss';
+@import '../blocks/section/__button-content/section__button-content.scss';
+
 /* Container */
 
 @import '../blocks/container/container.scss';
@@ -101,9 +109,3 @@
 /* Footer */
 
 @import '../blocks/footer/footer.scss';
-
-/* Section */
-
-@import '../blocks/section/section.scss';
-@import '../blocks/section/__title/section__title.scss';
-@import '../blocks/section/__description/section__description.scss';
