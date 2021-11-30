@@ -87,9 +87,13 @@
 
         <section id="section-surfaces" class="section surfaces">
           <div class="container surfaces__container">
-            <ul class="surfaces__list swiper-wrapper">
+            <h2 class="section__title surface__title"></h2>
+            <p class="section__description surface__description"></p>
+            <div class="surfaces__slider">
+              <ul class="surfaces__list swiper-wrapper">
 
-            </ul>
+              </ul>
+            </div>
             <ul class="surfaces__navigation">
               <li>
                 <button class="surfaces__button swiper-button-prev" type="button"></button>
@@ -153,6 +157,14 @@
 
           <!-- Form -->
 
+          <form class="form form_type_edit-profile" name="profile-form">
+            <h2 class="form__heading">Подпишитесь на рассылку —</h2>
+            <fieldset class="form__input-container">
+              <input class="form__item form__item_type_profile-name" type="text" name="profile-name" value="" placeholder="Имя" required="">
+            </fieldset>
+            <button class="form__save-button" type="submit">Сохранить</button>
+          </form>
+
           <!-- Copyright -->
 
           <p class="footer__copyright">&copy; Road Club 2021</p>
@@ -166,8 +178,6 @@
       <template class="surface-template">
         <li class="surfaces__item swiper-slide">
           <div class="surface">
-            <h2 class="section__title surface__title"></h2>
-            <p class="section__description surface__description"></p>
             <div class="surface__illustration">
               <img class="surface__image" src="" alt="">
               <img class="surface__icon" src="" alt="">
