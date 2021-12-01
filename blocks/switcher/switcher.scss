@@ -1,0 +1,28 @@
+.switcher {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  column-gap: 22px;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  padding: 0 2px;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &::before{
+    width: 28px;
+    height: 28px;
+    background-image: $icon-theme-light;
+  }
+  &::after{
+    width: 20px;
+    height: 20px;
+    background-image: $icon-theme-dark;
+  }
+}

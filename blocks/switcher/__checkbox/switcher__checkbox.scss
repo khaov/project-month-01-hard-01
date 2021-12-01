@@ -1,0 +1,13 @@
+.switcher__checkbox {
+  display: none;
+  &:not(:checked) {
+    & + .switcher__slider::before {
+      transform: translateX(0);
+    }
+  }
+  &:checked {
+    & + .switcher__slider::before {
+      transform: translateX(100%);
+    }
+  }
+}

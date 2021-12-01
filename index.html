@@ -59,10 +59,10 @@
                 <img class="intro__promo-image" src="./images/bicycles/bicycle-cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod">
             </div>
             <p class="section__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-            <a class="button" href="/">
-              <span class="button__content">
-                Подробнее
-              </span>
+            <a class="section__button" href="/">
+                <span class="section__button-content">
+                  Подробнее
+                </span>
             </a>
             <p class="intro__promo-caption">Cannondale Systemsix</p>
           </div>
@@ -87,9 +87,13 @@
 
         <section id="section-surfaces" class="section surfaces">
           <div class="container surfaces__container">
-            <ul class="surfaces__list swiper-wrapper">
+            <h2 class="section__title surface__title"></h2>
+            <p class="section__description surface__description"></p>
+            <div class="surfaces__slider">
+              <ul class="surfaces__list swiper-wrapper">
 
-            </ul>
+              </ul>
+            </div>
             <ul class="surfaces__navigation">
               <li>
                 <button class="surfaces__button swiper-button-prev" type="button"></button>
@@ -149,13 +153,30 @@
       <!-- Footer -->
 
       <footer class="footer">
-        <div class="container">
+        <div class="footer__container container">
 
-          <!-- Form -->
+          <!-- Subscription form -->
+
+          <form class="footer__subscription subscription" name="subscription-form">
+            <h2 class="subscription__title">Подпишитесь на рассылку —</h2>
+            <fieldset class="subscription__field">
+              <input class="subscription__input" type="text" name="subscription-email" value="" placeholder="Имя" required="">
+              <button class="subscription__submit" type="submit">ok</button>
+            </fieldset>
+          </form>
 
           <!-- Copyright -->
 
           <p class="footer__copyright">&copy; Road Club 2021</p>
+
+          <!-- Theme switcher -->
+
+          <div class="footer__switcher switcher">
+            <label class="switcher__control">
+              <input class="switcher__checkbox" type="checkbox">
+              <span class="switcher__slider"></span>
+            </label>
+          </div>
         </div>
       </footer>
 
@@ -166,8 +187,6 @@
       <template class="surface-template">
         <li class="surfaces__item swiper-slide">
           <div class="surface">
-            <h2 class="section__title surface__title"></h2>
-            <p class="section__description surface__description"></p>
             <div class="surface__illustration">
               <img class="surface__image" src="" alt="">
               <img class="surface__icon" src="" alt="">
