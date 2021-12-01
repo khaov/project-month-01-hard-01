@@ -109,3 +109,23 @@
 /* Footer */
 
 @import '../blocks/footer/footer.scss';
+@import '../blocks/footer/__container/footer__container.scss';
+@import '../blocks/footer/__subscription/footer__subscription.scss';
+@import '../blocks/footer/__copyright/footer__copyright.scss';
+@import '../blocks/footer/__switcher/footer__switcher.scss';
+
+/* Subscription */
+
+@import '../blocks/subscription/subscription.scss';
+@import '../blocks/subscription/__title/subscription__title.scss';
+@import '../blocks/subscription/__field/subscription__field.scss';
+@import '../blocks/subscription/__input/subscription__input.scss';
+@import '../blocks/subscription/__submit/subscription__submit.scss';
+
+/* Switcher */
+
+@import '../blocks/switcher/switcher.scss';
+@import '../blocks/switcher/__control/switcher__control.scss';
+@import '../blocks/switcher/__checkbox/switcher__checkbox.scss';
+@import '../blocks/switcher/__slider/switcher__slider.scss';
+

@@ -1,5 +1,8 @@
 .surfaces__navigation {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  width: 120px;
   margin: 0;
   padding: 0;
   list-style-type: none;

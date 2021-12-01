@@ -1,4 +1,6 @@
 .surfaces__container {
+  display: grid;
+  row-gap: 50px;
   max-width: 1340px;
   padding: 0 0 0 140px;
 }
