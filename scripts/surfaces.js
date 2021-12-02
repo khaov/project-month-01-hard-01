@@ -43,8 +43,20 @@ const surfacesSlider = new Swiper(".surfaces__slider", {
   on: {
     slideChange: function () {
       const surfaceIndex = this.realIndex;
+
       surfaceTitle.textContent = surfacesItems[surfaceIndex].title;
       surfaceDescription.textContent = surfacesItems[surfaceIndex].description;
+
+    },
+    transitionStart: function(){
+      const surfaces = document.querySelectorAll('.surface');
+      const activeSurface = document.querySelector('.swiper-slide-active > .surface');
+
+      surfaces.forEach(function(surface){
+        surface.classList.remove('surface_active');
+      });
+
+      activeSurface.classList.add('surface_active');
     },
   }
 });

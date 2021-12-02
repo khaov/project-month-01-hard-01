@@ -563,9 +563,10 @@ template {
 }
 
 .intro__promo-caption {
+  align-self: start;
   display: flex;
   align-items: center;
-  margin: 0;
+  margin: 115px 0 0;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
@@ -675,6 +676,11 @@ template {
 }
 
 /* Surface */
+.surface_active .surface__icon {
+  visibility: visible;
+  opacity: 1;
+}
+
 .surface__illustration {
   position: relative;
   width: 650px;
@@ -698,6 +704,9 @@ template {
   display: block;
   width: 98px;
   height: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.6s;
 }
 
 /* Bicycles */
