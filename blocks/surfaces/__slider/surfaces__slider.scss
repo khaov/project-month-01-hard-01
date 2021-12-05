@@ -1,4 +1,12 @@
 .surfaces__slider {
+  min-width: 1340px;
   margin: 30px 0 0;
   overflow: hidden;
+}
+
+@media screen and (max-width: $breakpoint-large) {
+  .surfaces__slider {
+    min-width: auto;
+    margin: 0;
+  }
 }

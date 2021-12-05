@@ -19,25 +19,25 @@
       <header class="header">
         <div class="container header__container">
 
-          <!-- Menu -->
+          <!-- Navigation -->
 
           <nav class="header__navigation">
             <ul class="header__navigation-list">
               <li class="header__navigation-item">
-                <a class="header__navigation-link link_type_anchor" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">Покрытия и градиенты</a>
+                <a class="header__navigation-link" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">Покрытия и градиенты</a>
               </li>
               <li class="header__navigation-item">
-                <a class="header__navigation-link link_type_anchor" href="#section-bicycles" title="Перейти к разделу «Велосипеды»">Велосипеды</a>
+                <a class="header__navigation-link" href="#section-bicycles" title="Перейти к разделу «Велосипеды»">Велосипеды</a>
               </li>
               <li class="header__navigation-item">
-                <a class="header__navigation-link link_type_anchor" href="#section-training" title="Перейти к разделу «Тренировки»">Тренировки</a>
+                <a class="header__navigation-link" href="#section-training" title="Перейти к разделу «Тренировки»">Тренировки</a>
               </li>
             </ul>
           </nav>
 
           <!-- Sandwich -->
 
-          <button class="header__sandwich sandwich">
+          <button class="sandwich">
             <span class="sandwich__bar"></span>
             <span class="sandwich__bar"></span>
             <span class="sandwich__bar"></span>
@@ -53,13 +53,13 @@
         <!-- Intro -->
 
         <section class="section intro">
-          <div class="container intro__container">
+          <div class="container section__container intro__container">
             <h1 class="section__title">Шоссе, ТТ и Грэвел</h1>
             <div class="intro__promo">
                 <img class="intro__promo-image" src="./images/bicycles/bicycle-cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod">
             </div>
             <p class="section__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
-            <a class="section__button link_type_anchor" href="#section-bicycles">
+            <a class="section__button" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">
                 <span class="section__button-content">
                   Подробнее
                 </span>
@@ -71,7 +71,7 @@
         <!-- Quote -->
 
         <section class="section quote">
-          <div class="container quote__container">
+          <div class="container section__container quote__container">
             <img class="quote__image" src="./images/section-quote-image.jpg" alt="">
             <blockquote class="quote__text">
               «Катайся много или мало, долго или коротко, как хочешь - но катайся»
@@ -86,9 +86,9 @@
         <!-- Surfaces -->
 
         <section id="section-surfaces" class="section surfaces">
-          <div class="container surfaces__container">
-            <h2 class="section__title surface__title"></h2>
-            <p class="section__description surface__description"></p>
+          <div class="container section__container surfaces__container">
+            <h2 class="section__title surfaces__title"></h2>
+            <p class="section__description surfaces__description"></p>
             <div class="surfaces__slider">
               <ul class="surfaces__list swiper-wrapper">
 
@@ -96,7 +96,7 @@
             </div>
             <ul class="surfaces__navigation">
               <li>
-                <button class="surfaces__button swiper-button-prev" type="button"></button>
+                <button class="surfaces__button surfaces__button_ swiper-button-prev" type="button"></button>
               </li>
               <li>
                 <button class="surfaces__button swiper-button-next" type="button"></button>
@@ -108,9 +108,10 @@
         <!-- Bicycles -->
 
         <section id="section-bicycles" class="section bicycles">
-          <div class="container bicycles__container">
+          <div class="container section__container bicycles__container">
             <h2 class="section__title">Велосипеды</h2>
             <ul class="bicycles__filter">
+
               <li class="bicycles__filter-item">
                 <button class="bicycles__filter-button">Шоссе</button>
               </li>
@@ -120,7 +121,9 @@
               <li class="bicycles__filter-item">
                 <button class="bicycles__filter-button">TT</button>
               </li>
+
             </ul>
+
             <div class="bicycles__slider">
               <ul class="bicycles__list swiper-wrapper">
 
@@ -133,7 +136,7 @@
         <!-- Training -->
 
         <section id="section-training" class="section training">
-          <div class="container training__container">
+          <div class="container section__container training__container">
             <h2 class="section__title">Тренировки</h2>
             <img class="training__image" src="./images/section-training-image.jpg" alt="">
             <p class="section__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
@@ -153,14 +156,14 @@
       <!-- Footer -->
 
       <footer class="footer">
-        <div class="footer__container container">
+        <div class="container footer__container">
 
           <!-- Subscription form -->
 
           <form class="footer__subscription subscription" name="subscription-form">
             <h2 class="subscription__title">Подпишитесь на рассылку —</h2>
             <fieldset class="subscription__field">
-              <input class="subscription__input" type="text" name="subscription-email" value="" placeholder="Имя" required="">
+              <input class="subscription__input" type="email" name="subscription-email" value="" placeholder="Имя" required="">
               <button class="subscription__submit" type="submit">ok</button>
             </fieldset>
           </form>
@@ -177,20 +180,53 @@
               <span class="switcher__slider"></span>
             </label>
           </div>
+
         </div>
+
       </footer>
 
+      <!-- Menu -->
+
+      <section class="menu">
+
+        <!-- Navigation -->
+
+        <nav class="menu__navigation">
+          <ul class="menu__navigation-list">
+            <li class="menu__navigation-item">
+              <a class="menu__navigation-link" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">Покрытия и градиенты</a>
+            </li>
+            <li class="menu__navigation-item">
+              <a class="menu__navigation-link" href="#section-bicycles" title="Перейти к разделу «Велосипеды»">Велосипеды</a>
+            </li>
+            <li class="menu__navigation-item">
+              <a class="menu__navigation-link" href="#section-training" title="Перейти к разделу «Тренировки»">Тренировки</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Theme switcher -->
+
+        <div class="menu__switcher switcher">
+          <label class="switcher__control">
+            <input class="switcher__checkbox" type="checkbox">
+            <span class="switcher__slider"></span>
+          </label>
+        </div>
+
+      </section>
+
       <!-- Templates -->
+
+
 
       <!-- Surface template -->
 
       <template class="surface-template">
         <li class="surfaces__item swiper-slide">
           <div class="surface">
-            <div class="surface__illustration">
-              <img class="surface__image" src="" alt="">
-              <img class="surface__icon" src="" alt="">
-            </div>
+            <img class="surface__image" src="" alt="">
+            <img class="surface__icon" src="" alt="">
           </div>
         </li>
       </template>

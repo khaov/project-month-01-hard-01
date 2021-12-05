@@ -3,3 +3,10 @@
   grid-row: 1/5;
   padding: 265px 0 0;
 }
+
+@media screen and (max-width: $breakpoint-medium) {
+  .intro__promo {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

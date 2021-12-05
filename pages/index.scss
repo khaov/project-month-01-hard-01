@@ -14,6 +14,7 @@
 /* Section */
 
 @import '../blocks/section/section.scss';
+@import '../blocks/section/__container/section__container.scss';
 @import '../blocks/section/__title/section__title.scss';
 @import '../blocks/section/__description/section__description.scss';
 @import '../blocks/section/__button/section__button.scss';
@@ -31,7 +32,6 @@
 @import '../blocks/header/__navigation-list/header__navigation-list.scss';
 @import '../blocks/header/__navigation-item/header__navigation-item.scss';
 @import '../blocks/header/__navigation-link/header__navigation-link.scss';
-@import '../blocks/header/__sandwich/header__sandwich.scss';
 
 /* Sandwich */
 
@@ -64,6 +64,8 @@
 
 @import '../blocks/surfaces/surfaces.scss';
 @import '../blocks/surfaces/__container/surfaces__container.scss';
+@import '../blocks/surfaces/__title/surfaces__title.scss';
+@import '../blocks/surfaces/__description/surfaces__description.scss';
 @import '../blocks/surfaces/__slider/surfaces__slider.scss';
 @import '../blocks/surfaces/__list/surfaces__list.scss';
 @import '../blocks/surfaces/__item/surfaces__item.scss';
@@ -74,9 +76,6 @@
 
 @import '../blocks/surface/surface.scss';
 @import '../blocks/surface/_active/surface_active.scss';
-@import '../blocks/surface/__title/surface__title.scss';
-@import '../blocks/surface/__description/surface__description.scss';
-@import '../blocks/surface/__illustration/surface__illustration.scss';
 @import '../blocks/surface/__image/surface__image.scss';
 @import '../blocks/surface/__icon/surface__icon.scss';
 
@@ -130,3 +129,10 @@
 @import '../blocks/switcher/__checkbox/switcher__checkbox.scss';
 @import '../blocks/switcher/__slider/switcher__slider.scss';
 
+/* Menu */
+
+@import '../blocks/menu/menu.scss';
+@import '../blocks/menu/__navigation/menu__navigation.scss';
+@import '../blocks/menu/__navigation-list/menu__navigation-list.scss';
+@import '../blocks/menu/__navigation-item/menu__navigation-item.scss';
+@import '../blocks/menu/__navigation-link/menu__navigation-link.scss';

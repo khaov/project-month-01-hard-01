@@ -3,4 +3,19 @@
   grid-template-columns: 1fr auto;
   grid-template-rows: repeat(2, auto);
   row-gap: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+}
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .bicycles__container {
+    
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+
+    padding: 40px 18px;
+
+  }
 }

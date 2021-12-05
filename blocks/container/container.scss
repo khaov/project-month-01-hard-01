@@ -1,5 +1,14 @@
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1236px;
   margin: 0 auto;
+  padding-right: 18px;
+  padding-left: 18px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .container {
+    max-width: 636px;
+  }
 }

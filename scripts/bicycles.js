@@ -48,15 +48,15 @@ const bicyclesSlider = new Swiper(".bicycles__slider", {
       enabled: true,
       slidesPerView: 1
     },
-    568: {
+    992: {
       enabled: true,
       slidesPerView: 2,
-      spaceBetween: 30
+      spaceBetween: 40
     },
-    768: {
+    1200: {
       enabled: false,
       slidesPerView: 3,
       spaceBetween: 30
-    },
+    }
   }
 });

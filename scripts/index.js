@@ -1,4 +1,18 @@
-const anchorsItems = document.querySelectorAll('.link_type_anchor');
+const sandwich = document.querySelector('.sandwich');
+const menu = document.querySelector('.menu');
+
+const anchorsItems = document.querySelectorAll('a[href*="#"]');
+
+function togglePopup(targetPopup) {
+  targetPopup.classList.toggle('popup_opened');
+}
+
+sandwich.addEventListener('click', function (){
+  sandwich.classList.toggle('sandwich_toggled');
+  togglePopup(menu);
+});
+
+// Smooth scroll
 
 anchorsItems.forEach(function (anchor) {
   anchor.addEventListener('click', function(e) {
@@ -17,3 +31,4 @@ anchorsItems.forEach(function (anchor) {
     });
   });
 });
+
