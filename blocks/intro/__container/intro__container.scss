@@ -3,10 +3,12 @@
   grid-template-columns: 460px 1fr;
   grid-template-rows: auto auto auto 1fr;
   gap: 50px;
-  min-height: 855px;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 20px;
+  padding-right: 0;
 }
+
+
+
 
 @media screen and (max-width: $breakpoint-large) {
   .intro__container {

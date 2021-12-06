@@ -1,16 +1,9 @@
-.intro__promo-image{
-  position: sticky;
-  top: 94px;
-  z-index: 1;
+.intro__promo-image {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  justify-self: end;
   display: block;
-  width: 440px;
-  height: 300px;
-  margin: 0;
-  padding: 20px 50px;
-  border-radius: 20px;
-  background-color: $primary-background;
-  box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
-  box-sizing: border-box;
+  width: 100%;
+  max-width: 610px;
   object-fit: cover;
-  object-position: center;
 }
