@@ -1,6 +1,6 @@
 .training__container {
   display: grid;
-  grid-template-columns: 1fr 580px;
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: auto auto 1fr;
   row-gap: 50px;
   column-gap: 160px;
@@ -8,7 +8,7 @@
   padding-bottom: 120px;
 }
 
-@media screen and (max-width: $breakpoint-large) {
+@media screen and (max-width: $breakpoint-extra-large) {
   .training__container {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
@@ -20,8 +20,8 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 40px;
-
     padding-top: 80px;
     padding-bottom: 60px;
+    @include section-border;
   }
 }

@@ -36,8 +36,8 @@ const surfacesSlider = new Swiper(".surfaces__slider", {
   spaceBetween: 40,
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
+    nextEl: '.surfaces__button_type_next',
+    prevEl: '.surfaces__button_type_prev'
   },
   breakpoints: {
     320: {

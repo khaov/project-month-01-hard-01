@@ -14,7 +14,6 @@
 /* Section */
 
 @import '../blocks/section/section.scss';
-@import '../blocks/section/__container/section__container.scss';
 @import '../blocks/section/__title/section__title.scss';
 @import '../blocks/section/__description/section__description.scss';
 @import '../blocks/section/__button/section__button.scss';
@@ -74,6 +73,8 @@
 @import '../blocks/surfaces/__item/surfaces__item.scss';
 @import '../blocks/surfaces/__navigation/surfaces__navigation.scss';
 @import '../blocks/surfaces/__button/surfaces__button.scss';
+@import '../blocks/surfaces/__button/_type/surfaces__button_type_prev.scss';
+@import '../blocks/surfaces/__button/_type/surfaces__button_type_next.scss';
 
 /* Surface */
 

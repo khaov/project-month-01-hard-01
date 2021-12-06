@@ -8,8 +8,8 @@
 @media screen and (max-width: $breakpoint-medium) {
   .surfaces__container {
     gap: 40px;
-
     padding-top: 80px;
     padding-bottom: 40px;
+    @include section-border;
   }
 }
