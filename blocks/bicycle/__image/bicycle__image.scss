@@ -9,3 +9,10 @@
   object-position: center;
   box-sizing: border-box;
 }
+
+@media screen and (max-width: $breakpoint-medium) {
+  .bicycle__image {
+    padding: 0;
+    box-shadow: none;
+  }
+}

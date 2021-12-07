@@ -42,21 +42,24 @@ loadBicyclesItems(bicyclesItems);
 
 // Initialize bicycles slider
 
-const bicyclesSlider = new Swiper(".bicycles__slider", {
+const bicyclesSlider = new Swiper('.bicycles__slider', {
+  spaceBetween: 30,
+  pagination: {
+    el: '.bicycles__pagination',
+    bulletClass: 'bicycles__pagination-bullet',
+    bulletActiveClass: 'bicycles__pagination-bullet_active',
+    bulletElement: 'li'
+  },
   breakpoints: {
     320: {
       enabled: true,
-      slidesPerView: 1
+      slidesPerView: 1,
     },
     992: {
-      enabled: true,
-      slidesPerView: 2,
-      spaceBetween: 40
-    },
-    1200: {
       enabled: false,
       slidesPerView: 3,
-      spaceBetween: 30
+      centeredSlides: false,
+      loop: false
     }
   }
 });

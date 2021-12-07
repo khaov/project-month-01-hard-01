@@ -17,6 +17,7 @@
     background-color: transparent;
     background-image: $icon-arrow;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
@@ -25,5 +26,9 @@
   .surfaces__button {
     width: 24px;
     height: 24px;
+    &::before {
+      width: 12px;
+      height: 6px;
+    }
   }
 }
