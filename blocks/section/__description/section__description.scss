@@ -7,3 +7,24 @@
   color: $secondary-color;
   opacity: .7;
 }
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .section__description {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .section__description {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .section__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}

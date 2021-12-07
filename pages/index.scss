@@ -31,7 +31,6 @@
 @import '../blocks/header/__navigation-list/header__navigation-list.scss';
 @import '../blocks/header/__navigation-item/header__navigation-item.scss';
 @import '../blocks/header/__navigation-link/header__navigation-link.scss';
-@import '../blocks/header/__sandwich/header__sandwich.scss';
 
 /* Sandwich */
 
@@ -45,8 +44,11 @@
 /* Intro */
 
 @import '../blocks/intro/intro.scss';
+@import '../blocks/intro/__title/intro__title.scss';
 @import '../blocks/intro/__container/intro__container.scss';
 @import '../blocks/intro/__promo/intro__promo.scss';
+@import '../blocks/intro/__promo-wrapper/intro__promo-wrapper.scss';
+@import '../blocks/intro/__promo-bicycle/intro__promo-bicycle.scss';
 @import '../blocks/intro/__promo-image/intro__promo-image.scss';
 @import '../blocks/intro/__promo-caption/intro__promo-caption.scss';
 
@@ -64,18 +66,20 @@
 
 @import '../blocks/surfaces/surfaces.scss';
 @import '../blocks/surfaces/__container/surfaces__container.scss';
+@import '../blocks/surfaces/__title/surfaces__title.scss';
+@import '../blocks/surfaces/__description/surfaces__description.scss';
 @import '../blocks/surfaces/__slider/surfaces__slider.scss';
 @import '../blocks/surfaces/__list/surfaces__list.scss';
 @import '../blocks/surfaces/__item/surfaces__item.scss';
 @import '../blocks/surfaces/__navigation/surfaces__navigation.scss';
 @import '../blocks/surfaces/__button/surfaces__button.scss';
+@import '../blocks/surfaces/__button/_type/surfaces__button_type_prev.scss';
+@import '../blocks/surfaces/__button/_type/surfaces__button_type_next.scss';
 
 /* Surface */
 
 @import '../blocks/surface/surface.scss';
-@import '../blocks/surface/__title/surface__title.scss';
-@import '../blocks/surface/__description/surface__description.scss';
-@import '../blocks/surface/__illustration/surface__illustration.scss';
+@import '../blocks/surface/_active/surface_active.scss';
 @import '../blocks/surface/__image/surface__image.scss';
 @import '../blocks/surface/__icon/surface__icon.scss';
 
@@ -83,12 +87,17 @@
 
 @import '../blocks/bicycles/bicycles.scss';
 @import '../blocks/bicycles/__container/bicycles__container.scss';
+@import '../blocks/bicycles/__header/bicycles__header.scss';
 @import '../blocks/bicycles/__filter/bicycles__filter.scss';
 @import '../blocks/bicycles/__filter-item/bicycles__filter-item.scss';
 @import '../blocks/bicycles/__filter-button/bicycles__filter-button.scss';
+@import '../blocks/bicycles/__content/bicycles__content.scss';
 @import '../blocks/bicycles/__slider/bicycles__slider.scss';
 @import '../blocks/bicycles/__list/bicycles__list.scss';
 @import '../blocks/bicycles/__item/bicycles__item.scss';
+@import '../blocks/bicycles/__pagination/bicycles__pagination.scss';
+@import '../blocks/bicycles/__pagination-bullet/bicycles__pagination-bullet.scss';
+@import '../blocks/bicycles/__pagination-bullet/_active/bicycles__pagination-bullet_active.scss';
 
 /* Bicycle */
 
@@ -129,3 +138,10 @@
 @import '../blocks/switcher/__checkbox/switcher__checkbox.scss';
 @import '../blocks/switcher/__slider/switcher__slider.scss';
 
+/* Menu */
+
+@import '../blocks/menu/menu.scss';
+@import '../blocks/menu/__navigation/menu__navigation.scss';
+@import '../blocks/menu/__navigation-list/menu__navigation-list.scss';
+@import '../blocks/menu/__navigation-item/menu__navigation-item.scss';
+@import '../blocks/menu/__navigation-link/menu__navigation-link.scss';

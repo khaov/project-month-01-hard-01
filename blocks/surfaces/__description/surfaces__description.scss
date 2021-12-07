@@ -1,0 +1,6 @@
+@media screen and (max-width: $breakpoint-medium) {
+  .surfaces__description {
+    grid-column: 1;
+    grid-row: 3/4;
+  }
+}

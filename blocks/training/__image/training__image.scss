@@ -7,3 +7,10 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media screen and (max-width: $breakpoint-medium) {
+  .training__image {
+    grid-row: auto;
+    grid-column: auto;
+  }
+}

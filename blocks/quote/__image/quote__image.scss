@@ -6,3 +6,9 @@
   object-fit: cover;
   object-position: center;
 }
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .quote__image {
+    grid-row: auto;
+  }
+}

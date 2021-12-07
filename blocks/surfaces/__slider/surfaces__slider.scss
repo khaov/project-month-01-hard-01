@@ -1,4 +1,19 @@
 .surfaces__slider {
+  min-width: 1340px;
   margin: 30px 0 0;
   overflow: hidden;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .surfaces__slider {
+    min-width: auto;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .surfaces__slider {
+    grid-column: 1;
+    grid-row: 2/3;
+  }
 }

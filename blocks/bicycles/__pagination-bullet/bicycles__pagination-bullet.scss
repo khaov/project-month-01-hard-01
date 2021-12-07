@@ -1,0 +1,10 @@
+.bicycles__pagination-bullet {
+  display: block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #cacaca;
+  &:not(:last-of-type) {
+    margin: 0 5px 0 0;
+  }
+}

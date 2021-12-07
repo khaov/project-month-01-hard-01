@@ -7,3 +7,24 @@
   letter-spacing: -0.5px;
   color: $primary-color;
 }
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .section__title {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .section__title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .section__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

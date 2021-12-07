@@ -1,0 +1,19 @@
+.menu {
+  display: none;
+
+
+
+  position: fixed;
+  top: 74px;
+  left: 0;
+  z-index: 3;
+  //display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 74px);
+  padding: 55px 55px 30px;
+  background-color: $primary-background;
+  box-sizing: border-box;
+}

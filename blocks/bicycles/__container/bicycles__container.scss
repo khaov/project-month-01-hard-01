@@ -1,6 +1,23 @@
 .bicycles__container {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 100%;
   grid-template-rows: repeat(2, auto);
   row-gap: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .bicycles__container {
+    row-gap: 60px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .bicycles__container {
+    row-gap: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    @include section-border;
+  }
 }
