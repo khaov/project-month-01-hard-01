@@ -1,13 +1,9 @@
 .menu {
-  display: none;
-
-
-
   position: fixed;
   top: 74px;
   left: 0;
   z-index: 3;
-  //display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;

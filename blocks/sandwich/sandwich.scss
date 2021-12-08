@@ -30,3 +30,9 @@
     }
   }
 }
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .sandwich {
+    display: flex;
+  }
+}

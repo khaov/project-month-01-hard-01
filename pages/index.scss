@@ -138,6 +138,11 @@
 @import '../blocks/switcher/__checkbox/switcher__checkbox.scss';
 @import '../blocks/switcher/__slider/switcher__slider.scss';
 
+/* Popup */
+
+@import '../blocks/popup/popup.css';
+@import '../blocks/popup/_opened/popup_opened.css';
+
 /* Menu */
 
 @import '../blocks/menu/menu.scss';

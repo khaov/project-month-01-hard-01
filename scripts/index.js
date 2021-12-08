@@ -1,15 +1,30 @@
-const sandwich = document.querySelector('.sandwich');
-const menu = document.querySelector('.menu');
-
+const sandwichButton = document.querySelector('.sandwich');
+const menuPopup = document.querySelector('.menu');
+const menuLinks = menuPopup.querySelectorAll('.menu__navigation-link');
 const anchorsItems = document.querySelectorAll('a[href*="#"]');
+
+// Pop-up
 
 function togglePopup(targetPopup) {
   targetPopup.classList.toggle('popup_opened');
 }
 
-sandwich.addEventListener('click', function (){
-  sandwich.classList.toggle('sandwich_toggled');
-  togglePopup(menu);
+// Mobile navigation
+
+function openMenu() {
+  sandwichButton.classList.toggle('sandwich_toggled');
+  togglePopup(menuPopup);
+}
+
+sandwichButton.addEventListener('click', function () {
+  openMenu();
+});
+
+menuLinks.forEach(function (link) {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    openMenu();
+  });
 });
 
 // Smooth scroll
