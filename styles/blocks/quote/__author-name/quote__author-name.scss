@@ -1,0 +1,29 @@
+.quote__author-name {
+  margin: 0;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
+  color: var(--primary-color);
+  transition: color .3s linear;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .quote__author-name {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .quote__author-name {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .quote__author-name {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

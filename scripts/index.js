@@ -1,3 +1,7 @@
+const themeSwitchers = document.querySelectorAll('.switcher__checkbox');
+const themeLight = document.querySelector('[media*=prefers-color-scheme][media*=light]');
+const themeDark = document.querySelector('[media*=prefers-color-scheme][media*=dark]');
+
 const sandwichButton = document.querySelector('.sandwich');
 const menuPopup = document.querySelector('.menu');
 const menuLinks = menuPopup.querySelectorAll('.menu__navigation-link');
@@ -47,3 +51,43 @@ anchorsItems.forEach(function (anchor) {
   });
 });
 
+// Theme change
+
+function setTheme(themeName) {
+  localStorage.setItem('theme', themeName);
+  if (localStorage.getItem('theme') === 'theme-dark') {
+    themeDark.media = "all";
+    themeLight.media = "not all";
+  } else {
+    themeLight.media = "all";
+    themeDark.media = "not all";
+  }
+}
+
+function toggleTheme() {
+  if (localStorage.getItem('theme') === 'theme-dark') {
+      setTheme('theme-light');
+      themeSwitchers.forEach(function (switcher) {
+        switcher.checked = false;
+      });
+  } else {
+      setTheme('theme-dark');
+      themeSwitchers.forEach(function (switcher) {
+        switcher.checked = true;
+      });
+  }
+}
+
+(function () {
+  if (localStorage.getItem('theme') === 'theme-dark') {
+      setTheme('theme-dark');
+      themeSwitchers.forEach(function (switcher) {
+        switcher.checked = true;
+      });
+  } else {
+      setTheme('theme-light');
+      themeSwitchers.forEach(function (switcher) {
+        switcher.checked = false;
+      });
+  }
+})();

@@ -9,6 +9,8 @@
     <meta name="author" content="Артём Хаов">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="pages/theme-light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="pages/theme-dark.css" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   </head>
   <body>
@@ -90,7 +92,7 @@
 
         <section id="section-surfaces" class="section surfaces">
           <div class="container surfaces__container">
-            <h2 class="section__title surfaces__title"></h2>
+            <h2 class="section__title surfaces__title">Покрытия и градиенты</h2>
             <p class="section__description surfaces__description"></p>
             <div class="surfaces__slider">
               <ul class="surfaces__list swiper-wrapper">
@@ -183,7 +185,7 @@
 
           <div class="footer__switcher switcher">
             <label class="switcher__control">
-              <input class="switcher__checkbox" type="checkbox">
+              <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
               <span class="switcher__slider"></span>
             </label>
           </div>
@@ -216,7 +218,7 @@
 
         <div class="menu__switcher switcher">
           <label class="switcher__control">
-            <input class="switcher__checkbox" type="checkbox">
+            <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
             <span class="switcher__slider"></span>
           </label>
         </div>
