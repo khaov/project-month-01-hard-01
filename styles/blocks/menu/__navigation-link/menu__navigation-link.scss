@@ -4,11 +4,11 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
-  color: $primary-color;
+  color: var(--primary-color);
   text-align: center;
   text-decoration: none;
   transition: .3s;
   &:hover {
-    opacity: .75;
+    opacity: var(--reduced-opacity);
   }
 }

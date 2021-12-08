@@ -1,5 +1,6 @@
 .sandwich__bar{
   width: 100%;
   height: 3px;
-  background-color: $primary-color;
+  background-color: var(--primary-color);
+  transition: background-color .3s linear;
 }

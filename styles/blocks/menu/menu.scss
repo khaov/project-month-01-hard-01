@@ -10,6 +10,6 @@
   width: 100%;
   height: calc(100% - 74px);
   padding: 55px 55px 30px;
-  background-color: $primary-background;
+  background-color: var(--primary-background);
   box-sizing: border-box;
 }

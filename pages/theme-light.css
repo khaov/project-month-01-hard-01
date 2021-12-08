@@ -1,8 +1,15 @@
 :root {
   --primary-color: #151515;
+  --primary-reverse-color: #151515;
   --secondary-color: #222;
   --primary-background: #f4f4f4;
   --secondary-background: #efefef;
+  --shadow-hover-opacity: .11;
   --reduced-opacity: .75;
+}
 
+@media screen and (max-width: 991px) {
+  :root {
+    --primary-reverse-color: #151515;
+  }
 }

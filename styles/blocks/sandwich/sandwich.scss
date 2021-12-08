@@ -12,7 +12,7 @@
   transition: .3s;
   cursor: pointer;
   &:hover {
-    opacity: .75;
+    opacity: var(--reduced-opacity);
   }
 }
 
