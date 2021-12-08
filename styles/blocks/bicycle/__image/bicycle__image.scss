@@ -1,0 +1,19 @@
+.bicycle__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: $primary-background;
+  object-fit: cover;
+  object-position: center;
+  box-sizing: border-box;
+  @include card-shadow;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .bicycle__image {
+    padding: 0;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,38 @@
+.sandwich {
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 22px;
+  height: 22px;
+  padding: 0 0 3px;
+  border: 0;
+  background-color: transparent;
+  box-sizing: border-box;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    opacity: var(--reduced-opacity);
+  }
+}
+
+.sandwich_toggled {
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  .sandwich__bar{
+    position: absolute;
+    &:nth-child(1) {
+      transform: rotate(90deg);
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .sandwich {
+    display: flex;
+  }
+}

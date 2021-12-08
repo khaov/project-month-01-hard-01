@@ -9,6 +9,8 @@
     <meta name="author" content="Артём Хаов">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="pages/theme-light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="pages/theme-dark.css" media="(prefers-color-scheme: dark)">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   </head>
   <body>
@@ -56,16 +58,16 @@
           <div class="container intro__container">
             <h1 class="section__title intro__title">Шоссе, ТТ и Грэвел</h1>
             <div class="intro__promo">
-                <figure class="intro__promo-wrapper">
-                  <img class="intro__promo-bicycle" src="./images/bicycles/bicycle-cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod">
-                </figure>
-                <img class="intro__promo-image" src="./images/section-intro-image.jpg" alt="">
+              <figure class="intro__promo-wrapper">
+                <img class="intro__promo-bicycle" src="./images/bicycles/bicycle-cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod">
+              </figure>
+              <img class="intro__promo-image" src="./images/section-intro-image.jpg" alt="">
             </div>
             <p class="section__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
             <a class="section__button" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">
-                <span class="section__button-content">
-                  Подробнее
-                </span>
+              <span class="section__button-content">
+                Подробнее
+              </span>
             </a>
             <p class="intro__promo-caption">Cannondale Systemsix</p>
           </div>
@@ -73,7 +75,7 @@
 
         <!-- Quote -->
 
-        <section class="section quote">
+        <section class="section quote" aria-label="Цитата">
           <div class="container quote__container">
             <img class="quote__image" src="./images/section-quote-image.jpg" alt="Норвегия. Поездка на велосипеде по горной дороге.">
             <blockquote class="quote__text">
@@ -90,7 +92,7 @@
 
         <section id="section-surfaces" class="section surfaces">
           <div class="container surfaces__container">
-            <h2 class="section__title surfaces__title"></h2>
+            <h2 class="section__title surfaces__title">Покрытия и градиенты</h2>
             <p class="section__description surfaces__description"></p>
             <div class="surfaces__slider">
               <ul class="surfaces__list swiper-wrapper">
@@ -183,7 +185,7 @@
 
           <div class="footer__switcher switcher">
             <label class="switcher__control">
-              <input class="switcher__checkbox" type="checkbox">
+              <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
               <span class="switcher__slider"></span>
             </label>
           </div>
@@ -194,7 +196,7 @@
 
       <!-- Menu -->
 
-      <section class="menu">
+      <section class="menu popup" aria-label="Навигация">
 
         <!-- Navigation -->
 
@@ -216,7 +218,7 @@
 
         <div class="menu__switcher switcher">
           <label class="switcher__control">
-            <input class="switcher__checkbox" type="checkbox">
+            <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
             <span class="switcher__slider"></span>
           </label>
         </div>
@@ -258,5 +260,6 @@
       <script src="./scripts/surfaces.js" defer></script>
       <script src="./scripts/bicycles.js" defer></script>
 
+    </div>
   </body>
 </html>
