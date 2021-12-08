@@ -4,6 +4,26 @@
   justify-self: end;
   display: block;
   width: 100%;
+  min-height: 836px;
   max-width: 610px;
   object-fit: cover;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .intro__promo-image {
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (max-width: $breakpoint-large) {
+  .intro__promo-image {
+    width: calc(100% - 40px);
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .intro__promo-image {
+    width: calc(100% - 30px);
+    min-height: auto;
+  }
 }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учебный проект «HARD — 01»</title>
+    <title>Road Club</title>
     <meta name="description" content="Проектный месяц. Практика разработки учебных проектов.">
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Артём Хаов">
@@ -59,9 +59,9 @@
             <h1 class="section__title intro__title">Шоссе, ТТ и Грэвел</h1>
             <div class="intro__promo">
               <figure class="intro__promo-wrapper">
-                <img class="intro__promo-bicycle" src="./images/bicycles/bicycle-cannondale-systemsix-himod.png" alt="Cannondale Systemsix Himod">
+                <img class="intro__promo-bicycle" src="./images/section-promo-bicycle.png" alt="Шоссейный велосипед для поездок по асфальту на разных градиентах.">
               </figure>
-              <img class="intro__promo-image" src="./images/section-intro-image.jpg" alt="">
+              <img class="intro__promo-image" src="./images/section-promo-image.jpg" alt="Австрия. Дорога к горам недалеко от города Инсбрук.">
             </div>
             <p class="section__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
             <a class="section__button" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">
@@ -147,7 +147,7 @@
         <section id="section-training" class="section training">
           <div class="container training__container">
             <h2 class="section__title">Тренировки</h2>
-            <img class="training__image" src="./images/section-training-image.jpg" alt="">
+            <img class="training__image" src="./images/section-training-image.jpg" alt="Проселочная дорога утром.">
             <p class="section__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
             <ul class="training__list">
               <li class="training__item">
@@ -172,7 +172,7 @@
           <form class="footer__subscription subscription" name="subscription-form">
             <h2 class="subscription__title">Подпишитесь на рассылку —</h2>
             <fieldset class="subscription__field">
-              <input class="subscription__input" type="email" name="subscription-email" value="" placeholder="Имя" required="">
+              <input class="subscription__input" name="subscription-email" type="email" value="" placeholder="Имя" required="">
               <button class="subscription__submit" type="submit">ok</button>
             </fieldset>
           </form>
@@ -183,12 +183,18 @@
 
           <!-- Theme switcher -->
 
-          <div class="footer__switcher switcher">
-            <label class="switcher__control">
-              <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
-              <span class="switcher__slider"></span>
-            </label>
+          <div class="footer__switcher">
+            <div class="switcher">
+              <label class="switcher__control">
+                <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
+                <span class="switcher__slider"></span>
+              </label>
+            </div>
           </div>
+
+          <!-- Logo -->
+
+          <div class="footer__logo"></div>
 
         </div>
 
@@ -216,11 +222,13 @@
 
         <!-- Theme switcher -->
 
-        <div class="menu__switcher switcher">
-          <label class="switcher__control">
-            <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
-            <span class="switcher__slider"></span>
-          </label>
+        <div class="menu__switcher">
+          <div class="switcher">
+            <label class="switcher__control">
+              <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
+              <span class="switcher__slider"></span>
+            </label>
+          </div>
         </div>
 
       </section>

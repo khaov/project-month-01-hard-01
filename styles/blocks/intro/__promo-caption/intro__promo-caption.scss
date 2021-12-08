@@ -6,13 +6,26 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
-  color: $primary-color;
+  color: var(--primary-color);
   &::after {
     content: '';
     display: block;
     width: 132px;
     height: 2px;
     margin: 0 0 0 30px;
-    background-color: #d7d4d4;
+    background-color: var(--promo-caption-border);
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .intro__promo-caption {
+    align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .intro__promo-caption {
+    display: none;
   }
 }

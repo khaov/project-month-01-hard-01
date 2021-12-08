@@ -1,3 +1,9 @@
 .footer__switcher {
   justify-self: end;
 }
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .footer__switcher {
+    display: none;
+  }
+}

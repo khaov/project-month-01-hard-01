@@ -3,13 +3,22 @@
   top: 94px;
   z-index: 1;
   display: block;
-  width: 440px;
-  height: 300px;
+  width: 100%;
+  height: auto;
+  max-width: 440px;
+  max-height: 300px;
   padding: 20px 50px;
   border-radius: 20px;
   background-color: $primary-background;
   box-shadow: -20px 60px 220px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .intro__promo-bicycle {
+    min-height: 160px;
+    padding: 10px 25px;
+  }
 }

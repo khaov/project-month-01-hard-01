@@ -1,17 +1,18 @@
 .bicycle__link {
-  display: flex;
+  display: grid;
+  row-gap: 22px;
   flex-direction: column;
   text-decoration: none;
+  &:hover {
+    .bicycle__image {
+      box-shadow: $primary-hover-shadow;
+    }
+  }
 }
 @media screen and (max-width: $breakpoint-medium) {
   .bicycle__link {
-    align-items: center;
+    row-gap: 0;
     max-width: 380px;
     margin: 0 auto;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: $primary-background;
-    box-shadow: 0px 20px 140px rgba(0, 0, 0, .06);
-    box-sizing: border-box;
   }
 }

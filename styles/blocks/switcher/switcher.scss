@@ -18,11 +18,11 @@
   &::before{
     width: 28px;
     height: 28px;
-    background-image: $icon-theme-light;
+    background-image: var(--icon-theme-light);
   }
   &::after{
     width: 20px;
     height: 20px;
-    background-image: $icon-theme-dark;
+    background-image: var(--icon-theme-dark);
   }
 }

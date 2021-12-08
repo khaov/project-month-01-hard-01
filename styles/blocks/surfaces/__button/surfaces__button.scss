@@ -7,22 +7,27 @@
   padding: 0;
   border-radius: 50%;
   border: 0;
-  background-color: #ebebeb;
+  background-color: var(--surfaces-button-background);
   cursor: pointer;
+  transition: .3s;
   &::before {
     content: '';
     display: block;
     width: 19px;
     height: 10px;
     background-color: transparent;
-    background-image: $icon-arrow;
+    background-image: var(--arrow-icon);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
+    transition: .3s;
+  }
+  &:hover {
+    opacity: .6;
   }
 }
 
-@media screen and (max-width: $breakpoint-extra-small) {
+@media screen and (max-width: $breakpoint-medium) {
   .surfaces__button {
     width: 24px;
     height: 24px;

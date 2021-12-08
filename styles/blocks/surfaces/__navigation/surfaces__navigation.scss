@@ -12,14 +12,9 @@
   .surfaces__navigation {
     grid-column: 1;
     grid-row: 1/2;
+    column-gap: 10px;
     justify-self: end;
     align-self: center;
-  }
-}
-
-@media screen and (max-width: $breakpoint-extra-small) {
-  .surfaces__navigation {
-    column-gap: 10px;
     width: 58px;
   }
 }

@@ -30,3 +30,12 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: $breakpoint-medium) {
+  .section__button {
+    max-width: 100%;
+    min-height: 46px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}

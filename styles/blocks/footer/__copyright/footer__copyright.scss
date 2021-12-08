@@ -4,6 +4,12 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 600;
+  color: var(--footer-copyright-color);
+  transition: color .3s linear;
+}
 
-  color: #cfcfcf;
+@media screen and (max-width: $breakpoint-extra-small) {
+  .footer__copyright {
+    align-self: center;
+  }
 }
