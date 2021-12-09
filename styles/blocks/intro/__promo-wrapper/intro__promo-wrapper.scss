@@ -1,0 +1,18 @@
+.intro__promo-wrapper {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  margin: 0;
+  padding: 327px 0 80px;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .intro__promo-wrapper {
+    padding: 120px 50px 40px 0;
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .intro__promo-wrapper {
+    padding: 80px 50px 40px 0;
+  }
+}

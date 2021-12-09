@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #151515;
+  --primary-reverse-color: #151515;
+  --secondary-color: #222;
+  --primary-background: #f4f4f4;
+  --secondary-background: #efefef;
+  --promo-caption-border: #d7d4d4;
+  --shadow-hover-opacity: .11;
+  --reduced-opacity: .75;
+  --extended-opacity: .6;
+  --surfaces-button-background: #ebebeb;
+  --switcher-slider-background: #fff;
+  --icon-theme-light: url(../images/icons/icon-sun-light.svg);
+  --icon-theme-dark: url(../images/icons/icon-crescent-light.svg);
+  --footer-copyright-color: #cfcfcf;
+  --footer-logo-image: url(../images/logos/footer-logo-light.svg);
+  --arrow-icon: url(../images/icons/icon-arrow-dark.svg);
+  --form-input-border: rgba(199, 199, 199, .5);
+  --form-input-border-active: #c7c7c7;
+  --form-input-placeholder: #222;
+
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --primary-reverse-color: #151515;
+  }
+}

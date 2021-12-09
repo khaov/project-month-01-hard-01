@@ -3,13 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Учебный проект «HARD — 01»</title>
+    <title>Road Club</title>
     <meta name="description" content="Проектный месяц. Практика разработки учебных проектов.">
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Артём Хаов">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="pages/index.css">
+    <link rel="stylesheet" href="pages/theme-light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="pages/theme-dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   </head>
   <body>
     <div class="page">
@@ -17,24 +19,255 @@
       <!-- Header -->
 
       <header class="header">
-        Хедер
+        <div class="container header__container">
+
+          <!-- Navigation -->
+
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">Покрытия и градиенты</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#section-bicycles" title="Перейти к разделу «Велосипеды»">Велосипеды</a>
+              </li>
+              <li class="header__navigation-item">
+                <a class="header__navigation-link" href="#section-training" title="Перейти к разделу «Тренировки»">Тренировки</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Sandwich -->
+
+          <button class="sandwich" type="button">
+            <span class="sandwich__bar"></span>
+            <span class="sandwich__bar"></span>
+            <span class="sandwich__bar"></span>
+          </button>
+
+        </div>
       </header>
 
       <!-- Content -->
 
       <main class="content">
-        Контент
+
+        <!-- Intro -->
+
+        <section class="section intro">
+          <div class="container intro__container">
+            <h1 class="section__title intro__title">Шоссе, ТТ и Грэвел</h1>
+            <div class="intro__promo">
+              <figure class="intro__promo-wrapper">
+                <img class="intro__promo-bicycle" src="./images/section-promo-bicycle.png" alt="Шоссейный велосипед для поездок по асфальту на разных градиентах.">
+              </figure>
+              <img class="intro__promo-image" src="./images/section-promo-image.jpg" alt="Австрия. Дорога к горам недалеко от города Инсбрук.">
+            </div>
+            <p class="section__description">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам – нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+            <a class="section__button" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">
+              <span class="section__button-content">
+                Подробнее
+              </span>
+            </a>
+            <p class="intro__promo-caption">Cannondale Systemsix</p>
+          </div>
+        </section>
+
+        <!-- Quote -->
+
+        <section class="section quote" aria-label="Цитата">
+          <div class="container quote__container">
+            <img class="quote__image" src="./images/section-quote-image.jpg" alt="Норвегия. Поездка на велосипеде по горной дороге.">
+            <blockquote class="quote__text">
+              «Катайся много или мало, долго или коротко, как хочешь - но катайся»
+            </blockquote>
+            <div class="quote__author">
+              <p class="quote__author-name">Эдди Меркс</p>
+              <p class="quote__author-subline">Велогонщик</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Surfaces -->
+
+        <section id="section-surfaces" class="section surfaces">
+          <div class="container surfaces__container">
+            <h2 class="section__title surfaces__title">Покрытия и градиенты</h2>
+            <p class="section__description surfaces__description"></p>
+            <div class="surfaces__slider">
+              <ul class="surfaces__list swiper-wrapper">
+
+              </ul>
+            </div>
+            <ul class="surfaces__navigation">
+              <li>
+                <button class="surfaces__button surfaces__button_type_prev" type="button" aria-label="Предыдущее изображение"></button>
+              </li>
+              <li>
+                <button class="surfaces__button surfaces__button_type_next" type="button" aria-label="Следующее изображение"></button>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Bicycles -->
+
+        <section id="section-bicycles" class="section bicycles">
+          <div class="bicycles__container container">
+
+            <div class="bicycles__header ">
+              <h2 class="section__title">Велосипеды</h2>
+              <ul class="bicycles__filter">
+                <li class="bicycles__filter-item">
+                  <button class="bicycles__filter-button bicycles__filter-button_active" type="button">Шоссе</button>
+                </li>
+                <li class="bicycles__filter-item">
+                  <button class="bicycles__filter-button" type="button">Грэвел</button>
+                </li>
+                <li class="bicycles__filter-item">
+                  <button class="bicycles__filter-button" type="button">TT</button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bicycles__content">
+              <div class="bicycles__slider">
+                <ul class="bicycles__list swiper-wrapper">
+
+                </ul>
+              </div>
+            </div>
+
+            <ul class="bicycles__pagination"></ul>
+          </div>
+        </section>
+
+        <!-- Training -->
+
+        <section id="section-training" class="section training">
+          <div class="container training__container">
+            <h2 class="section__title">Тренировки</h2>
+            <img class="training__image" src="./images/section-training-image.jpg" alt="Проселочная дорога утром.">
+            <p class="section__description">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot, а записать эти тренировки поможет приложение Strava, а также это приложение позволит построить тренировочный план.</p>
+            <ul class="training__list">
+              <li class="training__item">
+                <a class="training__link" href="https://www.strava.com" target="_blank">Strava</a>
+              </li>
+              <li class="training__item">
+                <a class="training__link" href="https://www.komoot.com" target="_blank">Komoot</a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </main>
 
       <!-- Footer -->
 
       <footer class="footer">
-        Футер
+        <div class="container footer__container">
+
+          <!-- Subscription form -->
+
+          <form class="footer__subscription subscription" name="subscription-form">
+            <h2 class="subscription__title">Подпишитесь на рассылку —</h2>
+            <fieldset class="subscription__field">
+              <input class="subscription__input" name="subscription-email" type="email" value="" placeholder="Имя" required="">
+              <button class="subscription__submit" type="submit">ok</button>
+            </fieldset>
+          </form>
+
+          <!-- Copyright -->
+
+          <p class="footer__copyright">&copy; Road Club 2021</p>
+
+          <!-- Theme switcher -->
+
+          <div class="footer__switcher">
+            <div class="switcher">
+              <label class="switcher__control">
+                <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
+                <span class="switcher__slider"></span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Logo -->
+
+          <div class="footer__logo"></div>
+
+        </div>
+
       </footer>
+
+      <!-- Menu -->
+
+      <section class="menu popup" aria-label="Навигация">
+
+        <!-- Navigation -->
+
+        <nav class="menu__navigation">
+          <ul class="menu__navigation-list">
+            <li class="menu__navigation-item">
+              <a class="menu__navigation-link" href="#section-surfaces" title="Перейти к разделу «Покрытия и градиенты»">Покрытия и градиенты</a>
+            </li>
+            <li class="menu__navigation-item">
+              <a class="menu__navigation-link" href="#section-bicycles" title="Перейти к разделу «Велосипеды»">Велосипеды</a>
+            </li>
+            <li class="menu__navigation-item">
+              <a class="menu__navigation-link" href="#section-training" title="Перейти к разделу «Тренировки»">Тренировки</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Theme switcher -->
+
+        <div class="menu__switcher">
+          <div class="switcher">
+            <label class="switcher__control">
+              <input class="switcher__checkbox" type="checkbox" onchange="toggleTheme()">
+              <span class="switcher__slider"></span>
+            </label>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Templates -->
+
+      <!-- Surface template -->
+
+      <template class="surface-template">
+        <li class="surfaces__item swiper-slide">
+          <div class="surface">
+            <img class="surface__image" src="" alt="">
+            <img class="surface__icon" src="" alt="">
+          </div>
+        </li>
+      </template>
+
+      <!-- Bicycle template -->
+
+      <template class="bicycle-template">
+        <li class="bicycles__item swiper-slide">
+          <div class="bicycle">
+            <a class="bicycle__link" href="" title="" target="_blank">
+              <img class="bicycle__image" src="" alt="">
+              <h3 class="bicycle__model"></h3>
+            </a>
+          </div>
+        </li>
+      </template>
 
       <!-- Scripts -->
 
-      <script src="scripts/index.js" defer></script>
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+      <script src="./scripts/data.js" defer></script>
+      <script src="./scripts/index.js" defer></script>
+      <script src="./scripts/surfaces.js" defer></script>
+      <script src="./scripts/bicycles.js" defer></script>
+
+    </div>
   </body>
 </html>

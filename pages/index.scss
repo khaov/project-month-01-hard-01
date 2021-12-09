@@ -1,0 +1,155 @@
+/* Vendor */
+
+@import '../vendor/normalize';
+@import '../vendor/fonts';
+
+/* Variables */
+
+@import '../styles/variables.scss';
+@import '../styles/mixins.scss';
+
+/* Page */
+
+@import '../styles/blocks/page/page.scss';
+
+/* Section */
+
+@import '../styles/blocks/section/section.scss';
+@import '../styles/blocks/section/__title/section__title.scss';
+@import '../styles/blocks/section/__description/section__description.scss';
+@import '../styles/blocks/section/__button/section__button.scss';
+@import '../styles/blocks/section/__button-content/section__button-content.scss';
+
+/* Container */
+
+@import '../styles/blocks/container/container.scss';
+
+/* Header */
+
+@import '../styles/blocks/header/header.scss';
+@import '../styles/blocks/header/__container/header__container.scss';
+@import '../styles/blocks/header/__navigation/header__navigation.scss';
+@import '../styles/blocks/header/__navigation-list/header__navigation-list.scss';
+@import '../styles/blocks/header/__navigation-item/header__navigation-item.scss';
+@import '../styles/blocks/header/__navigation-link/header__navigation-link.scss';
+
+/* Sandwich */
+
+@import '../styles/blocks/sandwich/sandwich.scss';
+@import '../styles/blocks/sandwich/__bar/sandwich__bar.scss';
+
+/* Content */
+
+@import '../styles/blocks/content/content.scss';
+
+/* Intro */
+
+@import '../styles/blocks/intro/intro.scss';
+@import '../styles/blocks/intro/__title/intro__title.scss';
+@import '../styles/blocks/intro/__container/intro__container.scss';
+@import '../styles/blocks/intro/__promo/intro__promo.scss';
+@import '../styles/blocks/intro/__promo-wrapper/intro__promo-wrapper.scss';
+@import '../styles/blocks/intro/__promo-bicycle/intro__promo-bicycle.scss';
+@import '../styles/blocks/intro/__promo-image/intro__promo-image.scss';
+@import '../styles/blocks/intro/__promo-caption/intro__promo-caption.scss';
+
+/* Quote */
+
+@import '../styles/blocks/quote/quote.scss';
+@import '../styles/blocks/quote/__container/quote__container.scss';
+@import '../styles/blocks/quote/__image/quote__image.scss';
+@import '../styles/blocks/quote/__text/quote__text.scss';
+@import '../styles/blocks/quote/__author/quote__author.scss';
+@import '../styles/blocks/quote/__author-name/quote__author-name.scss';
+@import '../styles/blocks/quote/__author-subline/quote__author-subline.scss';
+
+/* Surfaces */
+
+@import '../styles/blocks/surfaces/surfaces.scss';
+@import '../styles/blocks/surfaces/__container/surfaces__container.scss';
+@import '../styles/blocks/surfaces/__title/surfaces__title.scss';
+@import '../styles/blocks/surfaces/__description/surfaces__description.scss';
+@import '../styles/blocks/surfaces/__slider/surfaces__slider.scss';
+@import '../styles/blocks/surfaces/__list/surfaces__list.scss';
+@import '../styles/blocks/surfaces/__item/surfaces__item.scss';
+@import '../styles/blocks/surfaces/__navigation/surfaces__navigation.scss';
+@import '../styles/blocks/surfaces/__button/surfaces__button.scss';
+@import '../styles/blocks/surfaces/__button/_type/surfaces__button_type_prev.scss';
+@import '../styles/blocks/surfaces/__button/_type/surfaces__button_type_next.scss';
+
+/* Surface */
+
+@import '../styles/blocks/surface/surface.scss';
+@import '../styles/blocks/surface/_active/surface_active.scss';
+@import '../styles/blocks/surface/__image/surface__image.scss';
+@import '../styles/blocks/surface/__icon/surface__icon.scss';
+
+/* Bicycles */
+
+@import '../styles/blocks/bicycles/bicycles.scss';
+@import '../styles/blocks/bicycles/__container/bicycles__container.scss';
+@import '../styles/blocks/bicycles/__header/bicycles__header.scss';
+@import '../styles/blocks/bicycles/__filter/bicycles__filter.scss';
+@import '../styles/blocks/bicycles/__filter-item/bicycles__filter-item.scss';
+@import '../styles/blocks/bicycles/__filter-button/bicycles__filter-button.scss';
+@import '../styles/blocks/bicycles/__filter-button/_active/bicycles__filter-button_active.scss';
+@import '../styles/blocks/bicycles/__content/bicycles__content.scss';
+@import '../styles/blocks/bicycles/__slider/bicycles__slider.scss';
+@import '../styles/blocks/bicycles/__list/bicycles__list.scss';
+@import '../styles/blocks/bicycles/__item/bicycles__item.scss';
+@import '../styles/blocks/bicycles/__pagination/bicycles__pagination.scss';
+@import '../styles/blocks/bicycles/__pagination-bullet/bicycles__pagination-bullet.scss';
+@import '../styles/blocks/bicycles/__pagination-bullet/_active/bicycles__pagination-bullet_active.scss';
+
+/* Bicycle */
+
+@import '../styles/blocks/bicycle/bicycle.scss';
+@import '../styles/blocks/bicycle/__link/bicycle__link.scss';
+@import '../styles/blocks/bicycle/__image/bicycle__image.scss';
+@import '../styles/blocks/bicycle/__model/bicycle__model.scss';
+
+/* Training */
+
+@import '../styles/blocks/training/training.scss';
+@import '../styles/blocks/training/__container/training__container.scss';
+@import '../styles/blocks/training/__image/training__image.scss';
+@import '../styles/blocks/training/__list/training__list.scss';
+@import '../styles/blocks/training/__item/training__item.scss';
+@import '../styles/blocks/training/__link/training__link.scss';
+
+/* Footer */
+
+@import '../styles/blocks/footer/footer.scss';
+@import '../styles/blocks/footer/__container/footer__container.scss';
+@import '../styles/blocks/footer/__subscription/footer__subscription.scss';
+@import '../styles/blocks/footer/__copyright/footer__copyright.scss';
+@import '../styles/blocks/footer/__switcher/footer__switcher.scss';
+@import '../styles/blocks/footer/__logo/footer__logo.scss';
+
+/* Subscription */
+
+@import '../styles/blocks/subscription/subscription.scss';
+@import '../styles/blocks/subscription/__title/subscription__title.scss';
+@import '../styles/blocks/subscription/__field/subscription__field.scss';
+@import '../styles/blocks/subscription/__input/subscription__input.scss';
+@import '../styles/blocks/subscription/__submit/subscription__submit.scss';
+
+/* Switcher */
+
+@import '../styles/blocks/switcher/switcher.scss';
+@import '../styles/blocks/switcher/__control/switcher__control.scss';
+@import '../styles/blocks/switcher/__checkbox/switcher__checkbox.scss';
+@import '../styles/blocks/switcher/__slider/switcher__slider.scss';
+
+/* Popup */
+
+@import '../styles/blocks/popup/popup.css';
+@import '../styles/blocks/popup/_opened/popup_opened.css';
+
+/* Menu */
+
+@import '../styles/blocks/menu/menu.scss';
+@import '../styles/blocks/menu/__navigation/menu__navigation.scss';
+@import '../styles/blocks/menu/__navigation-list/menu__navigation-list.scss';
+@import '../styles/blocks/menu/__navigation-item/menu__navigation-item.scss';
+@import '../styles/blocks/menu/__navigation-link/menu__navigation-link.scss';

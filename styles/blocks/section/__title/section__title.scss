@@ -1,0 +1,31 @@
+.section__title {
+  max-width: 460px;
+  margin: 0;
+  font-size: 55px;
+  line-height: 60px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--primary-color);
+  transition: color .3s linear;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .section__title {
+    font-size: 44px;
+    line-height: 50px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .section__title {
+    font-size: 38px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-small) {
+  .section__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}

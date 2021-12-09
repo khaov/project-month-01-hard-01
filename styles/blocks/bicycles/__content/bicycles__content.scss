@@ -1,0 +1,21 @@
+.bicycles__content {
+  margin: -120px;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .bicycles__content {
+    margin: -120px -80px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-large) {
+  .bicycles__content {
+    margin: -120px -40px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .bicycles__content {
+    margin: -120px -20px;
+  }
+}

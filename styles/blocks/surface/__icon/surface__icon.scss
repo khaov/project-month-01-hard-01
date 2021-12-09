@@ -1,0 +1,19 @@
+.surface__icon {
+  position: absolute;
+  bottom: 16px;
+  left: 0;
+  display: block;
+  width: 98px;
+  height: 40px;
+  visibility: hidden;
+  opacity: 0;
+  transition: .6s;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .surface__icon {
+    bottom: 14px;
+    width: 70px;
+    height: 28px;
+  }
+}

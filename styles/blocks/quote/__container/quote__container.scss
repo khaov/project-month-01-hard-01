@@ -1,0 +1,26 @@
+.quote__container {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: 1fr auto;
+  column-gap: 80px;
+  padding-top: 120px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .quote__container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .quote__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    @include section-border;
+  }
+}

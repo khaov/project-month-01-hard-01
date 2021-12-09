@@ -1,0 +1,22 @@
+.bicycles__slider {
+  padding: 120px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .bicycles__slider {
+    padding: 120px 80px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-large) {
+  .bicycles__slider {
+    padding: 120px 40px;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .bicycles__slider {
+    padding: 120px 20px;
+  }
+}

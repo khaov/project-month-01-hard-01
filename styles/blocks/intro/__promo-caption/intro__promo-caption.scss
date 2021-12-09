@@ -1,0 +1,31 @@
+.intro__promo-caption {
+  align-self: start;
+  display: flex;
+  align-items: center;
+  margin: 117px 0 0;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--primary-color);
+  &::after {
+    content: '';
+    display: block;
+    width: 132px;
+    height: 2px;
+    margin: 0 0 0 30px;
+    background-color: var(--promo-caption-border);
+  }
+}
+
+@media screen and (max-width: $breakpoint-extra-large) {
+  .intro__promo-caption {
+    align-self: center;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .intro__promo-caption {
+    display: none;
+  }
+}

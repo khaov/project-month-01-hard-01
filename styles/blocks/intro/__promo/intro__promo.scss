@@ -1,0 +1,12 @@
+.intro__promo {
+  grid-column: 2/3;
+  grid-row: 1/5;
+  display: grid;
+}
+
+@media screen and (max-width: $breakpoint-medium) {
+  .intro__promo {
+    grid-column: auto;
+    grid-row: auto;
+  }
+}

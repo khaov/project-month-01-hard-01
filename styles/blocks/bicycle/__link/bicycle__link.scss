@@ -1,0 +1,18 @@
+.bicycle__link {
+  display: grid;
+  row-gap: 22px;
+  flex-direction: column;
+  text-decoration: none;
+  &:hover {
+    .bicycle__image {
+      box-shadow: $primary-hover-shadow;
+    }
+  }
+}
+@media screen and (max-width: $breakpoint-medium) {
+  .bicycle__link {
+    row-gap: 0;
+    max-width: 380px;
+    margin: 0 auto;
+  }
+}
