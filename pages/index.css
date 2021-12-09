@@ -374,6 +374,7 @@ template {
 /* Shadow */
 /* Background */
 /* Breakpoints */
+/* Legacy */
 /* Page */
 .page {
   display: grid;
@@ -1150,9 +1151,23 @@ template {
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
-  color: #222222;
+  color: var(--secondary-color);
   border: 0;
   background-color: transparent;
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.bicycles__filter-button:hover {
+  opacity: var(--extended-opacity);
+}
+
+.bicycles__filter-button_active {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.bicycles__filter-button_active:hover {
+  opacity: var(--reduced-opacity);
 }
 
 .bicycles__content {
@@ -1230,7 +1245,7 @@ template {
 }
 
 .bicycles__pagination-bullet_active {
-  background-color: #151515;
+  background-color: var(--primary-color);
 }
 
 /* Bicycle */
@@ -1496,12 +1511,51 @@ template {
   font-size: 13px;
   line-height: 28px;
   font-weight: 500;
-  color: #151515;
+  color: var(--primary-color);
   border-radius: 4px;
-  border: 1px solid rgba(199, 199, 199, 0.5);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--form-input-border);
   background-color: transparent;
   box-sizing: border-box;
+  transition: 0.3s;
   outline: none;
+}
+.subscription__input::-moz-placeholder {
+  color: var(--form-input-placeholder);
+  opacity: 0.7;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+.subscription__input:-ms-input-placeholder {
+  color: var(--form-input-placeholder);
+  opacity: 0.7;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+}
+.subscription__input::placeholder {
+  color: var(--form-input-placeholder);
+  opacity: 0.7;
+  transition: 0.3s;
+}
+.subscription__input:focus {
+  border-color: var(--form-input-border-active);
+}
+.subscription__input:focus::-moz-placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+.subscription__input:focus:-ms-input-placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+.subscription__input:focus::placeholder {
+  visibility: hidden;
+  opacity: 0;
+}
+.subscription__input:focus + .subscription__submit {
+  visibility: visible;
+  opacity: 1;
 }
 
 .subscription__submit {
@@ -1514,10 +1568,13 @@ template {
   font-size: 13px;
   line-height: 28px;
   font-weight: 500;
-  color: #151515;
+  color: var(--primary-color);
   border: 0;
   background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 /* Switcher */

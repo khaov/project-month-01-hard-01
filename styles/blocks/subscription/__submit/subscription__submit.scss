@@ -8,8 +8,11 @@
   font-size: 13px;
   line-height: 28px;
   font-weight: 500;
-  color: $primary-color;
+  color: var(--primary-color);
   border: 0;
   background-color: transparent;
+  visibility: hidden;
+  opacity: 0;
   cursor: pointer;
+  transition: .3s;
 }

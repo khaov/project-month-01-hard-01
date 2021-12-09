@@ -3,7 +3,13 @@
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
-  color: $secondary-color;
+  color: var(--secondary-color);
   border: 0;
   background-color: transparent;
+  opacity: .7;
+  transition: .3s;
+  cursor: pointer;
+  &:hover {
+    opacity: var(--extended-opacity);
+  }
 }

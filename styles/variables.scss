@@ -7,8 +7,6 @@ $primary-font-family: 'Inter', 'Arial', sans-serif;
 $primary-link-shadow: 0px 20px 140px rgba(0, 0, 0, .06);
 $primary-hover-shadow: 0px 20px 140px rgba(0, 0, 0, var(--shadow-hover-opacity));
 
-
-
 /* Background */
 
 $primary-background: #f4f4f4;
@@ -21,17 +19,8 @@ $breakpoint-medium: 991px;
 $breakpoint-small: 767px;
 $breakpoint-extra-small: 575px;
 
-
-
-
-
-
-
+/* Legacy */
 
 $primary-color: #151515;
 $secondary-color: #222222;
-$subscription-border: #c7c7c7;
-
-
 $primary-border: 1px solid #e3e3e3;
-

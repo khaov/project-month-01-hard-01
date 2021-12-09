@@ -1,0 +1,7 @@
+.bicycles__filter-button_active {
+  font-weight: 700;
+  color: var(--primary-color);
+  &:hover {
+    opacity: var(--reduced-opacity);
+  }
+}
