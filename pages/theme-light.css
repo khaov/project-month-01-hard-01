@@ -18,7 +18,6 @@
   --form-input-border: rgba(199, 199, 199, .5);
   --form-input-border-active: #c7c7c7;
   --form-input-placeholder: #222;
-
 }
 
 @media screen and (max-width: 991px) {
